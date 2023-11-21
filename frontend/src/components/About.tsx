@@ -11,24 +11,26 @@ const About = () => {
           </p>
         </div>
 
-        <p className="text-xl mt-20">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-          iusto id dicta repellat eius minus eum quaerat est temporibus ratione,
-          quasi unde quae in voluptate eaque pariatur ab illum maiores. Aliquam
-          deserunt necessitatibus accusamus voluptate minima nisi tempore
-          consectetur illum sed, dolorum id, quaerat, eum libero harum rerum.
-          Id, laborum.
+        <p className="text-xl mt-20 leading-relaxed">
+          Hello, I'm Jeff, a software engineer based in the city of Bangkok. My
+          journey in the world of coding is not just a career choice; it's a
+          continuous exploration and a commitment to lifelong learning. Beyond
+          the screen and lines of code, I see myself as an advocate for personal
+          development through knowledge. I firmly believe that every new piece
+          of information, every challenge overcome, contributes to my growth as
+          a professional and an individual.
         </p>
 
         <br />
 
-        <p className="text-xl">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati,
-          minus dolores earum alias perferendis officiis, consequuntur aliquid
-          nihil voluptates consectetur autem tempore laudantium ad, animi ipsum
-          minima a fuga asperiores? Commodi aliquam perferendis in dicta velit
-          temporibus soluta est amet adipisci culpa doloremque, animi earum nisi
-          sequi magni facere eveniet.
+        <p className="text-xl leading-relaxed">
+          As I navigate through the intricate world of software development, I
+          am fueled by curiosity and a genuine passion for creating meaningful
+          solutions. Whether it's tackling complex coding challenges or
+          mentoring others, I find fulfillment in the constant pursuit of
+          excellence. Join me on this exciting journey of innovation,
+          collaboration, and continuous learning! Let's build a future where
+          technology empowers positive change.
         </p>
       </div>
     </div>

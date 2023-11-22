@@ -1,7 +1,6 @@
-import { IoLogoInstagram } from "react-icons/io";
+import { IoIosMail } from "react-icons/io";
 import { IoLogoGithub } from "react-icons/io";
 import { IoLogoLinkedin } from "react-icons/io";
-import { IoIosMail } from "react-icons/io";
 
 const Contacts = () => {
   const contacts = [
@@ -13,18 +12,12 @@ const Contacts = () => {
     },
     {
       id: 2,
-      icon: IoLogoInstagram,
-      title: "Instagram",
-      link: "https://www.instagram.com/jeff.y.pv/",
-    },
-    {
-      id: 3,
       icon: IoLogoGithub,
       title: "Github",
       link: "https://github.com/phurinjeffy",
     },
     {
-      id: 4,
+      id: 3,
       icon: IoLogoLinkedin,
       title: "LinkedIn",
       link: "https://www.linkedin.com/in/phurinjeffy/",
@@ -83,7 +76,7 @@ const Contacts = () => {
 
         <div className="flex flex-col justify-center items-center my-6">
           <p className="text-xl font-light underline mb-4">
-            Contact Details
+            Contact me here
           </p>
           <div className="flex justify-center items-center">
             {contacts.map(({ id, icon: Icon, title, link }) => (

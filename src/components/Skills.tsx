@@ -4,11 +4,9 @@ import jsIcon from "../assets/javascript.png";
 import tsIcon from "../assets/typescript.png";
 import reactIcon from "../assets/react.png";
 import tailwindIcon from "../assets/tailwind.png";
+import pythonIcon from "../assets/python.png";
 import cIcon from "../assets/c.png";
 import cppIcon from "../assets/cpp.png";
-import javaIcon from "../assets/java.png";
-import pythonIcon from "../assets/python.png";
-import sqliteIcon from "../assets/sqlite.png";
 
 const Skills = () => {
   const skills = [
@@ -50,40 +48,28 @@ const Skills = () => {
     },
     {
       id: 7,
-      icon: sqliteIcon,
-      skill: "SQLite",
-      style: "shadow-sky-100",
-    },
-    {
-      id: 8,
       icon: pythonIcon,
       skill: "Python",
       style: "shadow-yellow-300",
     },
     {
-      id: 9,
-      icon: javaIcon,
-      skill: "Java",
-      style: "shadow-red-400",
-    },
-    {
-      id: 10,
+      id: 8,
       icon: cIcon,
       skill: "C",
-      style: "shadow-sky-300",
+      style: "shadow-blue-200",
     },
     {
-      id: 11,
+      id: 9,
       icon: cppIcon,
       skill: "C++",
-      style: "shadow-sky-300",
+      style: "shadow-blue-300",
     },
   ];
 
   return (
     <div
       id="skills"
-      className="md:h-screen w-full bg-gradient-to-b from-black to-gray-800 text-white"
+      className="md:h-screen w-full bg-gradient-to-b from-gray-700 via-gray-900 to-black text-white"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">

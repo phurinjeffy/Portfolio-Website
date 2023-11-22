@@ -29,7 +29,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 bg-black text-white fixed z-10">
+    <div className="flex justify-between items-center w-full h-20 px-4 backdrop-blur-lg text-white fixed z-10">
       <div>
         <h1 className="font-signature text-5xl m-2">jeff</h1>
       </div>
@@ -38,7 +38,7 @@ const Navbar = () => {
         {links.map(({ id, link }) => (
           <li
             key={id}
-            className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200"
+            className="px-4 cursor-pointer capitalize font-medium text-gray-100 hover:scale-105 duration-200"
           >
             <Link to={link} smooth duration={500}>
               {link}

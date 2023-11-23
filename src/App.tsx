@@ -18,7 +18,7 @@ function App() {
     <div className="w-full h-screen overflow-hidden">
       <Navbar />
       <Parallax pages={6} className="scrollbar-hide">
-        <ParallaxLayer offset={0.1} speed={-2} className="text-center z-30">
+        <ParallaxLayer offset={0.15} speed={-2} className="text-center z-30">
           <div className="font-bold text-gray-50 text-7xl md:text-9xl">
             WELCOME
           </div>

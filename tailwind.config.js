@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'mountain': '#010b24',
+      },
+    },
     fontFamily: {
       signature: ["Dancing Script"]
     },

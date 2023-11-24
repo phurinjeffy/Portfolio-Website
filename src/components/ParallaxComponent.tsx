@@ -13,7 +13,7 @@ interface ParallaxComponentProps {
 const ParallaxComponent = ({ children }: ParallaxComponentProps) => {
   return (
     <div className="w-full h-screen overflow-hidden">
-      <Parallax pages={6} className="scrollbar-hide">
+      <Parallax pages={(children as ReactNode[]).length! + 1} className="scrollbar-hide">
         <ParallaxLayer offset={0.15} speed={-2} className="text-center z-30">
           <div className="font-bold text-gray-50 text-7xl md:text-9xl">
             WELCOME

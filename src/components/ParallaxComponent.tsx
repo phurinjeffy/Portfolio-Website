@@ -12,7 +12,7 @@ interface ParallaxComponentProps {
 
 const ParallaxComponent = ({ children }: ParallaxComponentProps) => {
   return (
-    <Parallax pages={(children as ReactNode[]).length! + 1} className="scrollbar-hide">
+    <Parallax pages={(children as ReactNode[]).length + 1} className="scrollbar-hide">
       
       <ParallaxLayer offset={0.15} speed={-1.5} className="z-30">
         <div className="text-center font-bold text-gray-50 text-7xl md:text-9xl">

@@ -93,9 +93,9 @@ const Skills = () => {
   return (
     <div
       id="skills"
-      className="min-h-full w-full bg-gradient-to-b from-gray-700 via-gray-900 to-black text-white"
+      className="py-6 h-fit min-h-screen w-full bg-gradient-to-b from-gray-700 via-gray-900 to-orange-900 text-white"
     >
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
+      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center">
         <div className="pb-6">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             Skills
@@ -106,6 +106,21 @@ const Skills = () => {
           <p className="italic">Web Development</p>
           <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
             {webSkills.map(({ id, icon, skill, style }) => (
+              <div
+                key={id}
+                className={`${style} flex flex-col justify-evenly shadow-md duration-500 hover:scale-105 py-2 rounded-lg`}
+              >
+                <img src={icon} alt={skill} className="w-20 mx-auto" />
+                <p className="mt-4">{skill}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="py-6">
+          <p className="italic">Programming Languages</p>
+          <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
+            {languageSkills.map(({ id, icon, skill, style }) => (
               <div
                 key={id}
                 className={`${style} flex flex-col justify-evenly shadow-md duration-500 hover:scale-105 py-2 rounded-lg`}

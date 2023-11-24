@@ -5,6 +5,7 @@ import Image2 from "../assets/parallax_2.png";
 import Image3 from "../assets/parallax_3.png";
 import Image4 from "../assets/parallax_4.png";
 import Image5 from "../assets/parallax_5.png";
+import spaceCat from "../assets/cat-space.gif";
 
 interface ParallaxComponentProps {
   children: ReactNode;
@@ -12,7 +13,7 @@ interface ParallaxComponentProps {
 
 const ParallaxComponent = ({ children }: ParallaxComponentProps) => {
   return (
-    <Parallax pages={10} className="scrollbar-hide">
+    <Parallax pages={8} className="scrollbar-hide" config={{mass: 2, tension: 250, friction: 50}}>
       
       <ParallaxLayer offset={0.15} speed={-1.5} className="z-30">
         <div className="text-center font-bold text-gray-50 text-7xl md:text-9xl">
@@ -79,7 +80,11 @@ const ParallaxComponent = ({ children }: ParallaxComponentProps) => {
         {children}
       </ParallaxLayer>
 
-      <ParallaxLayer offset={6} factor={4} className="h-screen bg-gradient-to-b from-black via-slate-950 to-blue-950">
+      <ParallaxLayer offset={6} factor={2} className="h-screen bg-gradient-to-b from-black via-slate-950 to-blue-950 text-center">
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={6.5} speed={-0.2} className="flex justify-center">
+        <img src={spaceCat} />
       </ParallaxLayer>
 
     </Parallax>

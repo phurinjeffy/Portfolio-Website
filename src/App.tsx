@@ -10,7 +10,7 @@ import ParallaxComponent from "./components/ParallaxComponent";
 
 function App() {
   return (
-    <div>
+    <div className="w-full h-screen">
       <Navbar />
 
       <ParallaxComponent>

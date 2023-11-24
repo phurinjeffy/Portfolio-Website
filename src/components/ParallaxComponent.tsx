@@ -26,8 +26,9 @@ const ParallaxComponent = ({ children }: ParallaxComponentProps) => {
           style={{
             backgroundImage: `url(${Image5})`,
             backgroundSize: "cover",
+            backgroundPosition: "center",
           }}
-        ></div>
+        />
       </ParallaxLayer>
 
       <ParallaxLayer offset={0} speed={-0.6} className="z-10">
@@ -36,8 +37,9 @@ const ParallaxComponent = ({ children }: ParallaxComponentProps) => {
           style={{
             backgroundImage: `url(${Image4})`,
             backgroundSize: "cover",
+            backgroundPosition: "center",
           }}
-        ></div>
+        />
       </ParallaxLayer>
 
       <ParallaxLayer offset={0} speed={-0.4} className="z-20">
@@ -46,8 +48,9 @@ const ParallaxComponent = ({ children }: ParallaxComponentProps) => {
           style={{
             backgroundImage: `url(${Image3})`,
             backgroundSize: "cover",
+            backgroundPosition: "center",
           }}
-        ></div>
+        />
       </ParallaxLayer>
 
       <ParallaxLayer offset={0} speed={-0.2} className="z-30">
@@ -56,8 +59,9 @@ const ParallaxComponent = ({ children }: ParallaxComponentProps) => {
           style={{
             backgroundImage: `url(${Image2})`,
             backgroundSize: "cover",
+            backgroundPosition: "center",
           }}
-        ></div>
+        />
       </ParallaxLayer>
 
       <ParallaxLayer offset={0} speed={-0.1} className="z-40">
@@ -66,8 +70,9 @@ const ParallaxComponent = ({ children }: ParallaxComponentProps) => {
           style={{
             backgroundImage: `url(${Image1})`,
             backgroundSize: "cover",
+            backgroundPosition: "center",
           }}
-        ></div>
+        />
       </ParallaxLayer>
 
       <ParallaxLayer offset={1} speed={0} className="z-50">

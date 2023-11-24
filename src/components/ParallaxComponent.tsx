@@ -79,7 +79,7 @@ const ParallaxComponent = ({ children }: ParallaxComponentProps) => {
         {children}
       </ParallaxLayer>
 
-      <ParallaxLayer offset={6} factor={4} className="h-screen bg-gradient-to-b from-black via-slate-950 to-red-950">
+      <ParallaxLayer offset={6} factor={4} className="h-screen bg-gradient-to-b from-black via-slate-950 to-blue-950">
       </ParallaxLayer>
 
     </Parallax>

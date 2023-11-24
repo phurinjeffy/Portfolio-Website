@@ -83,7 +83,7 @@ const ParallaxComponent = ({ children }: ParallaxComponentProps) => {
       <ParallaxLayer offset={6} factor={2} className="h-screen bg-gradient-to-b from-black via-slate-950 to-blue-950 text-center">
       </ParallaxLayer>
 
-      <ParallaxLayer offset={6.5} speed={-0.2} className="flex justify-center">
+      <ParallaxLayer offset={7} speed={-0.1} className="flex justify-center">
         <img src={spaceCat} />
       </ParallaxLayer>
 

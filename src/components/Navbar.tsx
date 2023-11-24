@@ -1,8 +1,12 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  
+  const closeNav = () => {
+    setNav(false);
+  };
 
   const links = [
     {
@@ -27,6 +31,20 @@ const Navbar = () => {
     },
   ];
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        closeNav();
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div className="flex justify-between items-center w-full h-20 px-4 backdrop-blur-lg text-white fixed z-10">
       <div>
@@ -50,7 +68,7 @@ const Navbar = () => {
 
       <div
         onClick={() => setNav(!nav)}
-        className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden"
+        className="cursor-pointer pr-4 z-10 text-gray-100 md:hidden"
       >
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
@@ -58,7 +76,7 @@ const Navbar = () => {
       {nav && (
         <ul
           className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen 
-        bg-gradient-to-b from-black to-gray-800 text-gray-500"
+        bg-gradient-to-b from-mountain to-gray-700 text-gray-200 md:hidden"
         >
           {links.map(({ id, link }) => (
             <li

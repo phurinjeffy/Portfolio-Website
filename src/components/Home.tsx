@@ -1,12 +1,11 @@
 import myImage from "../assets/jeff.jpg";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import { Link } from "react-scroll";
 
 const Home = () => {
   return (
     <div
       id="home"
-      className="py-6 h-fit min-h-screen w-full bg-gradient-to-b from-mountain via-gray-900 to-red-900 flex justify-center"
+      className="py-6 h-fit min-h-screen w-full bg-gradient-to-b from-mountain via-gray-900 to-black flex justify-center"
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center px-4 md:flex-row">
         <div className="flex flex-col justify-center p-4">
@@ -20,10 +19,8 @@ const Home = () => {
           </p>
 
           <div>
-            <Link
-              to="portfolio"
-              smooth
-              duration={500}
+            <a
+              href="#portfolio"
               className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md 
             bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
             >
@@ -31,7 +28,7 @@ const Home = () => {
               <span className="group-hover:rotate-90 duration-300">
                 <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
               </span>
-            </Link>
+            </a>
           </div>
         </div>
 

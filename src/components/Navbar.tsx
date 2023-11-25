@@ -48,7 +48,7 @@ const Navbar = () => {
   return (
     <div className="flex justify-between items-center w-full h-20 px-4 backdrop-blur-lg text-white fixed z-10">
       <div>
-        <a href="#" className="font-signature text-5xl m-2">
+        <a href="#top" className="font-signature text-5xl m-2">
           jeff
         </a>
       </div>

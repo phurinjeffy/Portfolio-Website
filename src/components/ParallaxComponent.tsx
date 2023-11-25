@@ -18,6 +18,8 @@ const ParallaxComponent = ({ children }: ParallaxComponentProps) => {
       className="scrollbar-hide"
       config={{ mass: 2, tension: 250, friction: 50 }}
     >
+      <ParallaxLayer offset={0} speed={0} id="top"></ParallaxLayer>
+
       <ParallaxLayer offset={0.15} speed={-1.5} className="z-30">
         <div className="text-center font-bold text-gray-50 text-7xl md:text-9xl">
           WELCOME
@@ -83,11 +85,15 @@ const ParallaxComponent = ({ children }: ParallaxComponentProps) => {
         {children}
       </ParallaxLayer>
 
-      <ParallaxLayer offset={6} factor={3} className="h-screen bg-gradient-to-b from-black to-slate-950">
+      <ParallaxLayer
+        offset={6}
+        factor={3}
+        className="h-screen bg-gradient-to-b from-black to-slate-950 z-40"
+      >
         <div />
       </ParallaxLayer>
 
-      <ParallaxLayer offset={6.5} speed={-0.9}>
+      <ParallaxLayer offset={6.5} speed={-0.9} className="z-40">
         <img src={spaceCat} className="mx-auto" />
       </ParallaxLayer>
     </Parallax>

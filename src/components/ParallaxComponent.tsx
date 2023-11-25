@@ -86,14 +86,14 @@ const ParallaxComponent = ({ children }: ParallaxComponentProps) => {
       </ParallaxLayer>
 
       <ParallaxLayer
-        offset={6}
+        offset={(children as ReactNode[]).length + 1}
         factor={3}
         className="h-screen bg-gradient-to-b from-black to-slate-950 z-40"
       >
         <div />
       </ParallaxLayer>
 
-      <ParallaxLayer offset={6.5} speed={-0.9} className="z-40">
+      <ParallaxLayer offset={(children as ReactNode[]).length + 0.5} speed={-0.9} className="z-40">
         <img src={spaceCat} className="mx-auto" />
       </ParallaxLayer>
     </Parallax>

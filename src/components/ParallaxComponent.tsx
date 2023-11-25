@@ -13,8 +13,11 @@ interface ParallaxComponentProps {
 
 const ParallaxComponent = ({ children }: ParallaxComponentProps) => {
   return (
-    <Parallax pages={8} className="scrollbar-hide" config={{mass: 2, tension: 250, friction: 50}}>
-      
+    <Parallax
+      pages={(children as ReactNode[]).length + 4}
+      className="scrollbar-hide"
+      config={{ mass: 2, tension: 250, friction: 50 }}
+    >
       <ParallaxLayer offset={0.15} speed={-1.5} className="z-30">
         <div className="text-center font-bold text-gray-50 text-7xl md:text-9xl">
           WELCOME
@@ -80,13 +83,13 @@ const ParallaxComponent = ({ children }: ParallaxComponentProps) => {
         {children}
       </ParallaxLayer>
 
-      <ParallaxLayer offset={6} factor={2} className="h-screen bg-gradient-to-b from-black via-slate-950 to-blue-950 text-center">
+      <ParallaxLayer offset={6} factor={3} className="h-screen bg-gradient-to-b from-black to-slate-950">
+        <div />
       </ParallaxLayer>
 
-      <ParallaxLayer offset={7} speed={-0.1} className="flex justify-center">
-        <img src={spaceCat} />
+      <ParallaxLayer offset={6.5} speed={-0.9}>
+        <img src={spaceCat} className="mx-auto" />
       </ParallaxLayer>
-
     </Parallax>
   );
 };

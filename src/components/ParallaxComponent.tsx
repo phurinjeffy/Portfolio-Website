@@ -5,16 +5,19 @@ import Image2 from "../assets/parallax_2.png";
 import Image3 from "../assets/parallax_3.png";
 import Image4 from "../assets/parallax_4.png";
 import Image5 from "../assets/parallax_5.png";
-import spaceCat from "../assets/cat-space.gif";
+// import spaceCat from "../assets/cat-space.gif";
 
 interface ParallaxComponentProps {
   children: ReactNode;
 }
 
 const ParallaxComponent = ({ children }: ParallaxComponentProps) => {
+  const smallPages = (children as ReactNode[]).length + 3.5;
+  const largePages = (children as ReactNode[]).length + 1.5;
+
   return (
     <Parallax
-      pages={(children as ReactNode[]).length + 4}
+      pages={window.innerWidth < 640 ? smallPages : largePages}
       className="scrollbar-hide"
       config={{ mass: 2, tension: 250, friction: 50 }}
     >
@@ -100,13 +103,13 @@ const ParallaxComponent = ({ children }: ParallaxComponentProps) => {
         <div />
       </ParallaxLayer>
 
-      <ParallaxLayer
+      {/* <ParallaxLayer
         offset={(children as ReactNode[]).length + 0.5}
         speed={-0.9}
         className="z-40"
       >
         <img src={spaceCat} className="mx-auto" />
-      </ParallaxLayer>
+      </ParallaxLayer> */}
     </Parallax>
   );
 };

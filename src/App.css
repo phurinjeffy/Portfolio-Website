@@ -2,10 +2,6 @@
   @apply scroll-smooth
 }
 
-body {
-  @apply bg-gradient-to-tr from-sky-900 to-slate-400;
-}
-
 /* For Webkit-based browsers (Chrome, Safari and Opera) */
 .scrollbar-hide::-webkit-scrollbar {
   display: none;

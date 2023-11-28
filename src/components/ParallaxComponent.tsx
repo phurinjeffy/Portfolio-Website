@@ -1,10 +1,10 @@
 import { ReactNode } from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-import Image1 from "../assets/parallax_1.png";
+import Image1 from "../assets/parallax_1.png"; // Foreground
 import Image2 from "../assets/parallax_2.png";
 import Image3 from "../assets/parallax_3.png";
 import Image4 from "../assets/parallax_4.png";
-import Image5 from "../assets/parallax_5.png";
+import Image5 from "../assets/parallax_5.png"; // Background
 // import spaceCat from "../assets/cat-space.gif";
 
 interface ParallaxComponentProps {

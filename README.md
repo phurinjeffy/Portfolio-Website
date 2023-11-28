@@ -2,7 +2,7 @@
 
 My personal portfolio website to showcase my skills and experiences to anyone interested in learning more about me, which acts as a reflection of myself and a representative of some of my best work.
 
-Developed using ReactJS, FastAPI, SQLite and PostgreSQL.
+Developed using React, TypeScript, and Tailwind.
 
 <br>
 

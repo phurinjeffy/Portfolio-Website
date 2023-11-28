@@ -9,7 +9,7 @@ Developed using React, TypeScript, and Tailwind.
 ## Preview
 
 <img width="1280" alt="image" src="https://github.com/phurinjeffy/Portfolio-Website/assets/110296454/53f1d621-4126-4f98-b33e-07b581bddf5e">
-
+<br>
 <br>
 
 ## Deployment

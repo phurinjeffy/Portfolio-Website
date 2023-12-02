@@ -7,9 +7,7 @@ import tailwindIcon from "../assets/tailwind.png";
 import pythonIcon from "../assets/python.png";
 import cIcon from "../assets/c.png";
 import cppIcon from "../assets/cpp.png";
-import rustIcon from "../assets/rust.png";
 import javaIcon from "../assets/java.png";
-import rIcon from "../assets/r.png";
 
 const Skills = () => {
   const webSkills = [
@@ -72,21 +70,9 @@ const Skills = () => {
     },
     {
       id: 4,
-      icon: rustIcon,
-      skill: "Rust",
-      style: "shadow-orange-600",
-    },
-    {
-      id: 5,
       icon: javaIcon,
       skill: "Java",
       style: "shadow-red-600",
-    },
-    {
-      id: 6,
-      icon: rIcon,
-      skill: "R",
-      style: "shadow-blue-600",
     },
   ]
 

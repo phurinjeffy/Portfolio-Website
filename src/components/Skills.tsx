@@ -8,6 +8,10 @@ import pythonIcon from "../assets/python.png";
 import cIcon from "../assets/c.png";
 import cppIcon from "../assets/cpp.png";
 import javaIcon from "../assets/java.png";
+import nextIcon from "../assets/nextjs.png";
+import vueIcon from "../assets/vuejs.png";
+import expressIcon from "../assets/expressjs.png";
+import nodeIcon from "../assets/nodejs.png";
 
 const Skills = () => {
   const webSkills = [
@@ -32,19 +36,31 @@ const Skills = () => {
     {
       id: 4,
       icon: reactIcon,
-      skill: "React",
+      skill: "ReactJS",
       style: "shadow-blue-600",
+    },
+    {
+      id: 7,
+      icon: nextIcon,
+      skill: "Next.js",
+      style: "shadow-zinc-400",
+    },
+    {
+      id: 8,
+      icon: vueIcon,
+      skill: "Vue.js",
+      style: "shadow-green-400",
     },
     {
       id: 5,
       icon: tsIcon,
-      skill: "Typescript",
+      skill: "TypeScript",
       style: "shadow-blue-400",
     },
     {
       id: 6,
       icon: tailwindIcon,
-      skill: "Tailwind",
+      skill: "TailwindCSS",
       style: "shadow-sky-400",
     },
   ];
@@ -73,6 +89,18 @@ const Skills = () => {
       icon: javaIcon,
       skill: "Java",
       style: "shadow-red-600",
+    },
+    {
+      id: 5,
+      icon: expressIcon,
+      skill: "Express.js",
+      style: "shadow-slate-600",
+    },
+    {
+      id: 6,
+      icon: nodeIcon,
+      skill: "Node.js",
+      style: "shadow-green-600",
     },
   ]
 

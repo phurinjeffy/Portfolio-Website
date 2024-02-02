@@ -1,4 +1,5 @@
 import seWebsite from "../assets/se-website.png";
+import stockManager from "../assets/stock-manager.png"
 
 const Portfolio = () => {
   const portfolios = [
@@ -7,6 +8,12 @@ const Portfolio = () => {
       title: "SE Website",
       src: seWebsite,
       link: "https://github.com/phurinjeffy/SE-Website",
+    },
+    {
+      id: 2,
+      title: "Stock Manager",
+      src: stockManager,
+      link: "https://github.com/phurinjeffy/Stock_Manager",
     },
   ];
 

@@ -5,7 +5,6 @@ import Image2 from "../assets/parallax_2.png";
 import Image3 from "../assets/parallax_3.png";
 import Image4 from "../assets/parallax_4.png";
 import Image5 from "../assets/parallax_5.png"; // Background
-// import spaceCat from "../assets/cat-space.gif";
 
 interface ParallaxComponentProps {
   children: ReactNode;
@@ -102,14 +101,6 @@ const ParallaxComponent = ({ children }: ParallaxComponentProps) => {
       >
         <div />
       </ParallaxLayer>
-
-      {/* <ParallaxLayer
-        offset={(children as ReactNode[]).length + 0.5}
-        speed={-0.9}
-        className="z-40"
-      >
-        <img src={spaceCat} className="mx-auto" />
-      </ParallaxLayer> */}
     </Parallax>
   );
 };

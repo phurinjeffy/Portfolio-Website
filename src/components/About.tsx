@@ -2,7 +2,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="py-6 h-fit min-h-screen w-full bg-gradient-to-b from-black via-gray-900 to-gray-700 text-white flex justify-center"
+      className="py-16 w-full bg-gradient-to-b from-black via-gray-900 to-gray-700 text-white flex justify-center"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center">
         <div className="pb-2">
@@ -11,26 +11,21 @@ const About = () => {
           </p>
         </div>
 
-        <p className="text-xl mt-20 leading-relaxed">
-          Hello, I'm Jeff, a software engineer based in the city of Bangkok. My
-          journey in the world of coding is not just a career choice; it's a
-          continuous exploration and a commitment to lifelong learning. Beyond
-          the screen and lines of code, I see myself as an advocate for personal
-          development through knowledge. I firmly believe that every new piece
-          of information, every challenge overcome, contributes to my growth as
-          a professional and an individual.
+        <p className="text-xl mt-10 leading-relaxed">
+          I'm Phurin Vanasrivilai, a final-year Software Engineering (Honours)
+          student at The University of Queensland. Originally from Thailand, I'm
+          currently based in Brisbane, Australia, where I'm completing my degree
+          as part of a Double Degree Program with King Mongkut's Institute of
+          Technology Ladkrabang.
         </p>
 
         <br />
 
         <p className="text-xl leading-relaxed">
-          As I navigate through the intricate world of software development, I
-          am fueled by curiosity and a genuine passion for creating meaningful
-          solutions. Whether it's tackling complex coding challenges or
-          mentoring others, I find fulfillment in the constant pursuit of
-          excellence. Join me on this exciting journey of innovation,
-          collaboration, and continuous learning! Let's build a future where
-          technology empowers positive change.
+          I'm passionate about software development and creating scalable,
+          user-centred solutions. With experience from my internship at Toyota
+          Tsusho NEXTY Electronics and various personal projects, I love
+          tackling complex problems and continuously learning new technologies.
         </p>
       </div>
     </div>

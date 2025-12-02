@@ -11,8 +11,8 @@ interface ParallaxComponentProps {
 }
 
 const ParallaxComponent = ({ children }: ParallaxComponentProps) => {
-  const smallPages = (children as ReactNode[]).length + 3.5;
-  const largePages = (children as ReactNode[]).length + 1.5;
+  const smallPages = (children as ReactNode[]).length + 2.5;
+  const largePages = (children as ReactNode[]).length + 1;
 
   return (
     <Parallax
@@ -92,14 +92,6 @@ const ParallaxComponent = ({ children }: ParallaxComponentProps) => {
 
       <ParallaxLayer offset={1} speed={0} className="z-50">
         {children}
-      </ParallaxLayer>
-
-      <ParallaxLayer
-        offset={(children as ReactNode[]).length + 1}
-        factor={3}
-        className="h-screen bg-gradient-to-b from-black to-slate-950 z-40"
-      >
-        <div />
       </ParallaxLayer>
     </Parallax>
   );

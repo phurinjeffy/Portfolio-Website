@@ -10,21 +10,22 @@ const Home = () => {
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center px-4 md:flex-row">
         <div className="flex flex-col justify-center p-4">
           <h2 className="text-4xl sm:text-7xl font-bold text-white">
-            Hello! My name is Jeff
+            Hello! I'm Phurin
           </h2>
           <p className="text-gray-500 py-4 max-w-md">
-            Currently, I'm a Software Engineering student at KMITL. I'm
-            interested in building and developing software. I love working on
-            website applications as a Full Stack developer.
+            Ex Full Stack Developer Intern @ Toyota Tsusho Group | Software
+            Engineering (Honours) Student @ UQ
           </p>
 
           <div>
             <a
-              href="#portfolio"
+              href="https://github.com/phurinjeffy"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md 
             bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
             >
-              Portfolio
+              GitHub
               <span className="group-hover:rotate-90 duration-300">
                 <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
               </span>

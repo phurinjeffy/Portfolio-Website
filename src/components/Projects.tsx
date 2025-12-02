@@ -2,7 +2,7 @@ import queenslandInMotion from "../assets/queenslandInMotion.png";
 import uqBasement from "../assets/uqBasement.png";
 import attackOnAnimals from "../assets/attackOnAnimals.png";
 
-const Portfolio = () => {
+const Projects = () => {
   const portfolios = [
     {
       id: 1,
@@ -33,13 +33,13 @@ const Portfolio = () => {
 
   return (
     <div
-      id="portfolio"
+      id="projects"
       className="py-6 h-fit min-h-screen w-full bg-gradient-to-b from-gray-700 via-gray-900 to-black text-white flex justify-center"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center">
         <div className="pb-6">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
-            Portfolio
+            Projects
           </p>
           <p className="py-6">Check out some of my works right here!</p>
         </div>
@@ -67,4 +67,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Projects;

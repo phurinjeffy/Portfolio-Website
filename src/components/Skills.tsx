@@ -102,12 +102,12 @@ const Skills = () => {
       skill: "Node.js",
       style: "shadow-green-600",
     },
-  ]
+  ];
 
   return (
     <div
       id="skills"
-      className="py-6 h-fit min-h-screen w-full bg-gradient-to-b from-gray-700 via-gray-900 to-black text-white"
+      className="py-6 h-fit min-h-screen w-full bg-gradient-to-b from-black via-gray-900 to-gray-700 text-white"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center">
         <div className="pb-6">
@@ -117,7 +117,7 @@ const Skills = () => {
         </div>
 
         <div className="py-6">
-          <p className="italic">Web Development</p>
+          <p className="italic">Front-end Development</p>
           <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
             {webSkills.map(({ id, icon, skill, style }) => (
               <div
@@ -132,7 +132,7 @@ const Skills = () => {
         </div>
 
         <div className="py-6">
-          <p className="italic">Programming Languages</p>
+          <p className="italic">Back-end Development</p>
           <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
             {languageSkills.map(({ id, icon, skill, style }) => (
               <div
@@ -145,7 +145,6 @@ const Skills = () => {
             ))}
           </div>
         </div>
-
       </div>
     </div>
   );

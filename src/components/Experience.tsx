@@ -1,3 +1,7 @@
+import deswikLogo from "../assets/deswik.png";
+import toyotaLogo from "../assets/toyota.webp";
+import kmitlLogo from "../assets/kmitl.png";
+
 const Experience = () => {
   const experiences = [
     {
@@ -6,6 +10,7 @@ const Experience = () => {
       company: "Deswik",
       period: "May 2026 - Present",
       location: "Brisbane, QLD, Australia",
+      logo: deswikLogo,
       responsibilities: [
         "Support automated test suite maintenance for Deswik.CAD",
         "Help ensure consistent software quality across CAD workflows",
@@ -17,6 +22,7 @@ const Experience = () => {
       company: "Toyota Tsusho NEXTY Electronics (Thailand) Co., Ltd.",
       period: "April 2024 - June 2024",
       location: "Bangkok, Thailand",
+      logo: toyotaLogo,
       responsibilities: [
         "Redesigned and migrated the company's HRIS platform, improving performance and the internal user experience",
         "Built a scalable full-stack architecture with Vue.js on the frontend and Laravel on the backend",
@@ -29,6 +35,7 @@ const Experience = () => {
       company: "King Mongkut's Institute of Technology Ladkrabang",
       period: "July 2023 - March 2024",
       location: "Bangkok, Thailand",
+      logo: kmitlLogo,
       responsibilities: [
         "Tutored in an Object-Oriented Programming course, helping students grasp OOP concepts using C++",
         "Tutored first-year students in a Computer Programming course, introducing programming fundamentals using Python",
@@ -52,19 +59,40 @@ const Experience = () => {
 
         <div className="space-y-8">
           {experiences.map(
-            ({ id, title, company, period, location, responsibilities }) => (
+            ({
+              id,
+              title,
+              company,
+              period,
+              location,
+              logo,
+              responsibilities,
+            }) => (
               <div
                 key={id}
                 className="border-l-4 border-cyan-500 pl-6 py-4 hover:bg-gray-800/30 transition-colors duration-300 rounded-r-lg"
               >
-                <h3 className="text-2xl font-bold text-cyan-400">{title}</h3>
-                <p className="text-xl text-gray-200 mt-2">{company}</p>
-                <p className="text-gray-300 mt-1">
-                  {location}
-                </p>
-                <p className="text-gray-400 mt-1">
-                  {period}
-                </p>
+                <div className="flex flex-col md:flex-row gap-6">
+                  {logo && (
+                    <div className="flex-shrink-0 flex items-center justify-center md:justify-start">
+                      <img
+                        src={logo}
+                        alt={`${company} logo`}
+                        loading="lazy"
+                        decoding="async"
+                        className="w-20 h-20 object-contain rounded-lg"
+                      />
+                    </div>
+                  )}
+                  <div className="flex-grow">
+                    <h3 className="text-2xl font-bold text-cyan-400">
+                      {title}
+                    </h3>
+                    <p className="text-xl text-gray-200 mt-2">{company}</p>
+                    <p className="text-gray-300 mt-1">{location}</p>
+                    <p className="text-gray-400 mt-1">{period}</p>
+                  </div>
+                </div>
                 <ul className="mt-4 space-y-2">
                   {responsibilities.map((responsibility, index) => (
                     <li key={index} className="text-gray-300 flex items-start">

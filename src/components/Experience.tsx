@@ -2,22 +2,33 @@ const Experience = () => {
   const experiences = [
     {
       id: 1,
-      title: "Full Stack Developer Intern",
-      company: "Toyota Tsusho NEXTY Electronics (Thailand) Co., Ltd.",
-      period: "April 2024 - June 2024",
-      location: "Thailand",
+      title: "Software Developer in Test Intern",
+      company: "Deswik",
+      period: "May 2026 - Present",
+      location: "Brisbane, QLD, Australia",
       responsibilities: [
-        "Redesigned and migrated the company's HRIS website, enhancing system efficiency and user experience",
-        "Utilised Vue.js for front-end development and Laravel for back-end, ensuring a scalable architecture",
-        "Automated testing processes with Robot Framework, improving quality assurance and reducing manual testing time",
+        "Support automated test suite maintenance for Deswik.CAD",
+        "Help ensure consistent software quality across CAD workflows",
       ],
     },
     {
       id: 2,
+      title: "Full Stack Developer Intern",
+      company: "Toyota Tsusho NEXTY Electronics (Thailand) Co., Ltd.",
+      period: "April 2024 - June 2024",
+      location: "Bangkok, Thailand",
+      responsibilities: [
+        "Redesigned and migrated the company's HRIS platform, improving performance and the internal user experience",
+        "Built a scalable full-stack architecture with Vue.js on the frontend and Laravel on the backend",
+        "Automated tests with Robot Framework to reduce manual testing effort and improve coverage",
+      ],
+    },
+    {
+      id: 3,
       title: "Teaching Assistant (Tutor)",
       company: "King Mongkut's Institute of Technology Ladkrabang",
       period: "July 2023 - March 2024",
-      location: "Thailand",
+      location: "Bangkok, Thailand",
       responsibilities: [
         "Tutored in an Object-Oriented Programming course, helping students grasp OOP concepts using C++",
         "Tutored first-year students in a Computer Programming course, introducing programming fundamentals using Python",
@@ -30,7 +41,7 @@ const Experience = () => {
   return (
     <div
       id="experience"
-      className="py-6 h-fit min-h-screen w-full bg-gradient-to-b from-black via-gray-900 to-gray-700 text-white flex justify-center"
+      className="w-full bg-gradient-to-b from-black via-gray-900 to-gray-700 py-12 text-white flex justify-center md:py-16"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center">
         <div className="pb-8">
@@ -47,9 +58,12 @@ const Experience = () => {
                 className="border-l-4 border-cyan-500 pl-6 py-4 hover:bg-gray-800/30 transition-colors duration-300 rounded-r-lg"
               >
                 <h3 className="text-2xl font-bold text-cyan-400">{title}</h3>
-                <p className="text-xl text-gray-300 mt-2">{company}</p>
+                <p className="text-xl text-gray-200 mt-2">{company}</p>
+                <p className="text-gray-300 mt-1">
+                  {location}
+                </p>
                 <p className="text-gray-400 mt-1">
-                  {period} • {location}
+                  {period}
                 </p>
                 <ul className="mt-4 space-y-2">
                   {responsibilities.map((responsibility, index) => (
@@ -60,7 +74,7 @@ const Experience = () => {
                   ))}
                 </ul>
               </div>
-            )
+            ),
           )}
         </div>
       </div>

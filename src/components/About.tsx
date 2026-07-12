@@ -12,20 +12,19 @@ const About = () => {
         </div>
 
         <p className="text-xl mt-10 leading-relaxed">
-          I'm Phurin Vanasrivilai, a final-year Software Engineering (Honours)
-          student at The University of Queensland. Originally from Thailand, I'm
-          currently based in Brisbane, Australia, where I'm completing my degree
-          as part of a Double Degree Program with King Mongkut's Institute of
-          Technology Ladkrabang.
+          Software Engineering graduate (First Class Honours) from the University of Queensland with a GPA of 6.44/7.0. Awarded a merit scholarship and twice recognised with the Dean’s Commendation for Academic Excellence.
         </p>
 
         <br />
 
         <p className="text-xl leading-relaxed">
-          I'm passionate about software development and creating scalable,
-          user-centred solutions. With experience from my internship at Toyota
-          Tsusho NEXTY Electronics and various personal projects, I love
-          tackling complex problems and continuously learning new technologies.
+          Currently a Software Developer in Test Intern within the CAD team at Deswik.
+        </p>
+
+        <br />
+
+        <p className="text-xl leading-relaxed">
+          Open to graduate software engineering opportunities.
         </p>
       </div>
     </div>

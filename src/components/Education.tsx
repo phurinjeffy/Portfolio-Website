@@ -8,11 +8,11 @@ const Education = () => {
       institution: "The University of Queensland",
       degree: "Bachelor of Engineering (Honours) in Software Engineering",
       period: "2024 - 2026",
-      location: "Brisbane, Queensland, Australia",
-      gpa: "6.50 / 7.00",
+      location: "Brisbane, QLD, Australia",
+      gpa: "6.44 / 7.00",
       achievements: [
-        "Dean's Commendation for Academic Excellence",
-        "25% Merit Scholarship",
+        "First Class Honours (Class I)",
+        "Dean's Commendation for Academic Excellence, 2x recipient",
       ],
       logo: uqLogo,
     },
@@ -23,8 +23,10 @@ const Education = () => {
         "Bachelor of Engineering in Software Engineering (International Program)",
       period: "2022 - 2026",
       location: "Bangkok, Thailand",
-      gpa: "3.75 / 4.00",
-      achievements: ["Double Degree Program with The University of Queensland"],
+      gpa: "3.70 / 4.00",
+      achievements: [
+        "Transferred to UQ as part of a Double Degree Program",
+      ],
       logo: kmitlLogo,
     },
   ];
@@ -63,6 +65,8 @@ const Education = () => {
                       <img
                         src={logo}
                         alt={institution}
+                        loading="lazy"
+                        decoding="async"
                         className="w-20 h-20 object-contain rounded-lg"
                       />
                     </div>
@@ -71,9 +75,9 @@ const Education = () => {
                     <h3 className="text-2xl font-bold text-cyan-400">
                       {institution}
                     </h3>
-                    <p className="text-xl text-gray-300 mt-2">{degree}</p>
+                    <p className="text-xl text-gray-200 mt-2">{degree}</p>
                     <p className="text-gray-400 mt-1">
-                      {period} • {location}
+                      {period}
                     </p>
                     <p className="text-gray-300 mt-2 font-semibold">
                       GPA: {gpa}

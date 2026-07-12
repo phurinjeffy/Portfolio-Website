@@ -8,7 +8,6 @@ const Education = () => {
       institution: "The University of Queensland",
       degree: "Bachelor of Engineering (Honours) in Software Engineering",
       period: "2024 - 2026",
-      location: "Brisbane, QLD, Australia",
       gpa: "6.44 / 7.00",
       achievements: [
         "First Class Honours (Class I)",
@@ -22,7 +21,6 @@ const Education = () => {
       degree:
         "Bachelor of Engineering in Software Engineering (International Program)",
       period: "2022 - 2026",
-      location: "Bangkok, Thailand",
       gpa: "3.70 / 4.00",
       achievements: [
         "Transferred to UQ as part of a Double Degree Program",
@@ -50,7 +48,6 @@ const Education = () => {
               institution,
               degree,
               period,
-              location,
               gpa,
               achievements,
               logo,

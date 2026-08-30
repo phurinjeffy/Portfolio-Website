@@ -21,7 +21,7 @@ const Education = () => {
       degree:
         "Bachelor of Engineering in Software Engineering (International Program)",
       period: "2022 - 2026",
-      gpa: "3.70 / 4.00",
+      gpa: "3.72 / 4.00",
       achievements: [
         "Transferred to UQ as part of a Double Degree Program",
       ],

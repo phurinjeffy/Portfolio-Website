@@ -8,12 +8,15 @@ const Experience = () => {
       id: 1,
       title: "Software Developer in Test Intern",
       company: "Deswik",
-      period: "May 2026 - Present",
+      period: "May 2026 - November 2026",
       location: "Brisbane, QLD, Australia",
       logo: deswikLogo,
       responsibilities: [
-        "Support automated test suite maintenance for Deswik.CAD",
-        "Help ensure consistent software quality across CAD workflows",
+        "Developed automated end-to-end GUI regression tests for Deswik.CAD, converting existing manual test scenarios into automated suites to expand test coverage and reduce manual testing effort.",
+        "Contributed to test framework improvements, focusing on execution speed, efficiency, reliability, and reducing test flakiness to improve the overall stability of the automation suite",
+        "Developed automated performance tests for Deswik.CAD commands and workflows to monitor execution performance and identify regressions against historical benchmarks",
+        "Reviewed automated test results, investigated failures, and implemented bug fixes to ensure reliable test execution",
+        "Refactored and optimised test code to improve maintainability and reusability",
       ],
     },
     {

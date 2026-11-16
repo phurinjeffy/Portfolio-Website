@@ -23,6 +23,7 @@ const Education = () => {
       period: "2022 - 2026",
       gpa: "3.70 / 4.00",
       achievements: [
+        "Graduated with First Class Honours",
         "Transferred to UQ as part of a Double Degree Program",
       ],
       logo: kmitlLogo,

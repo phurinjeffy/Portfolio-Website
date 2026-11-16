@@ -15,7 +15,9 @@ const Home = () => {
             Hello! I'm Phurin
           </h1>
           <p className="text-gray-300 py-5 max-w-xl text-lg leading-relaxed">
-            Software Developer in Test Intern @ Deswik | Software Engineering (First Class Honours) Graduate @ UQ
+            Software Engineering (First Class Honours) Graduate @ UQ | Software
+            Intern @ Deswik | Full Stack Developer Intern @ Toyota Tsusho NEXTY
+            Electronics
           </p>
 
           <div className="mt-6 flex flex-wrap gap-3">

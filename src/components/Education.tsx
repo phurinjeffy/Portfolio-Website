@@ -1,10 +1,18 @@
 import kmitlLogo from "../assets/kmitl.png";
 import uqLogo from "../assets/uq.jpg";
+import unimelbLogo from "../asserts/unimelb.svg"
 
 const Education = () => {
   const education = [
+      {
+        id: 1,
+        institution: "The University of Melbourne",
+        degree: "Master of Data Science",
+        period: "2027 - 2028",
+        logo: unimelbLogo,
+    },
     {
-      id: 1,
+      id: 2,
       institution: "The University of Queensland",
       degree: "Bachelor of Engineering (Honours) in Software Engineering",
       period: "2024 - 2026",
@@ -12,11 +20,12 @@ const Education = () => {
       achievements: [
         "Graduated with First Class Honours (Class I)",
         "Dean's Commendation for Academic Excellence (2x recipient)",
+        "Relevant Coursework: Machine Learning, Artificial Intelligence, Software Architecture, Algorithms and Data Structures"
       ],
       logo: uqLogo,
     },
     {
-      id: 2,
+      id: 3,
       institution: "King Mongkut's Institute of Technology Ladkrabang",
       degree:
         "Bachelor of Engineering in Software Engineering (International Program)",
@@ -77,10 +86,12 @@ const Education = () => {
                     <p className="text-gray-400 mt-1">
                       {period}
                     </p>
-                    <p className="text-gray-300 mt-2 font-semibold">
-                      GPA: {gpa}
-                    </p>
-                    {achievements.length > 0 && (
+                    {gpa && (
+                      <p className="text-gray-300 mt-2 font-semibold">
+                        GPA: {gpa}
+                      </p>
+                    )}
+                    {achievements && achievements.length > 0 && (
                       <ul className="mt-3 space-y-1">
                         {achievements.map((achievement, index) => (
                           <li

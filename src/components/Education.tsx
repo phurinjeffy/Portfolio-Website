@@ -1,6 +1,6 @@
 import kmitlLogo from "../assets/kmitl.png";
 import uqLogo from "../assets/uq.jpg";
-import unimelbLogo from "../asserts/unimelb.svg"
+import unimelbLogo from "../assets/unimelb.svg"
 
 const Education = () => {
   const education = [

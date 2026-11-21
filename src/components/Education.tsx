@@ -10,7 +10,7 @@ const Education = () => {
       period: "2024 - 2026",
       gpa: "6.44 / 7.00",
       achievements: [
-        "First Class Honours (Class I)",
+        "Graduated with First Class Honours (Class I)",
         "Dean's Commendation for Academic Excellence (2x recipient)",
       ],
       logo: uqLogo,

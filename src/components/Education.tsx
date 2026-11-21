@@ -29,7 +29,7 @@ const Education = () => {
       institution: "King Mongkut's Institute of Technology Ladkrabang",
       degree:
         "Bachelor of Engineering in Software Engineering (International Program)",
-      period: "2022 - 2026",
+      period: "2022 - 2025",
       gpa: "3.72 / 4.00",
       achievements: [
         "Graduated with First Class Honours",
